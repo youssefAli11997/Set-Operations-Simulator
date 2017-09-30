@@ -719,11 +719,11 @@ public class MainWindow extends javax.swing.JFrame {
                 }
             }
             if(!dup){
-                System.out.println(ele);
+                //System.out.println(ele);
                 universe.add(ele);
             }
         }
-        System.out.println(universe);
+        //System.out.println(universe);
         myProg = new SetOfStrings(universe, maxSetsNumber, sets);
     }//GEN-LAST:event_addElementsActionPerformed
 
@@ -759,19 +759,19 @@ public class MainWindow extends javax.swing.JFrame {
                 }
             }
             for(int i=0; i<universe.size(); i++){
-                System.out.println(universe.get(i) + " " + ele);
+                //System.out.println(universe.get(i) + " " + ele);
                 if(universe.get(i).equals(ele)){
                     inUniv = true;
                     break;
                 }
             }
-            System.out.println(inUniv);
+            //System.out.println(inUniv);
             if(!dup && inUniv){
-                System.out.println(ele);
+                //System.out.println(ele);
                 sets.get(enteredSetNumber).add(ele);
             }
         }
-        System.out.println(sets);
+        //System.out.println(sets);
         myProg = new SetOfStrings(universe, maxSetsNumber, sets);
     }//GEN-LAST:event_addElementsSetActionPerformed
 
@@ -832,8 +832,8 @@ public class MainWindow extends javax.swing.JFrame {
             StringBuilder sb = new StringBuilder();
             for(ArrayList<String> set : myProg.getSets()){
                 cnt++;
-                if(set.isEmpty())
-                    continue;
+                /*if(set.isEmpty())
+                    continue;*/
                 sb.append("Set #" + cnt + " : ");
                 sb.append("{ ");
                 for(int i=0; i<set.size(); i++){
