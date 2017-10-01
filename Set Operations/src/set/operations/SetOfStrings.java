@@ -23,11 +23,6 @@ public class SetOfStrings {
         });
     }
     
-    // compare function
-    private int comp(String a, String b){
-        return a.compareToIgnoreCase(b);
-    }
-    
     public ArrayList<String> getUniverse(){
         return this.universe;
     }
